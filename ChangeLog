@@ -1,0 +1,118 @@
+2012-07-23
+ * Applying patch by Arno Rehn to avoid blacklisting in
+   Oxygen-transparent style
+
+2012-06-05
+ * Using URL to create a default filename when saving
+   copy of document
+ * Minor change in UI to place long mime type labels
+   in one line
+ * Adding push button to copy URL into clipboard
+
+2012-05-29
+ * Fixing some minor compilation errors
+ * Adding KCModule (System Settings module) to configure
+   which mime types shall be supported, removing this
+   option from the plugin itself
+
+2012-05-24
+ * Rearranging GUI to be more compact vertically
+ * Porting from KBibTeX support for custom keyboard shorts
+ * Refactoring drop-down menu to tree view for mime type
+   configuration
+
+2012-04-22
+ * Adding patch by Rex Dieter <rdieter@fedoraproject.org>
+   set installation directory by parameter to cmake
+ * Fixing print menu item issue for Okular part
+ * Menus and toolbars know separators now
+
+2012-04-19
+ * Various minor changes
+ * Adding experimental support for menus and toolbars
+   from embedded part
+
+2012-04-11
+ * Adding various mimetypes to blacklist
+
+2011-08-23
+ * Blacklisting some more Java mimetypes:
+   application/java-archive and video/x-javafx
+
+2011-08-06
+ * Minor code clean-up and refactoring (no functional
+   changes)
+
+2011-06-06
+ * Added .pot file for translations (no actual
+   translations yet)
+
+2010-12-16
+ * Adding "application/googletalk" to blacklisted mime
+   types
+
+2010-12-08
+ * Adding "application/futuresplash" to blacklisted mime
+   types
+ * Checking if mime type is valid when reading data to
+   avoid crash
+ * Minor tweaks in user interface strings
+
+2010-07-23
+ * Manually raising dialog to select part (if multiple
+   KParts available for same mime type)
+ * Minor GUI improvements
+
+2010-07-22
+ * Showing current mime type in GUI (right to buttons)
+ * Adding more mime types to built-in blacklisted list
+   ("application/force-download", everything starting
+   with "x-")
+ * Adding release date to internal description
+   (see "about:plugins" in Firefox)
+
+2010-07-06
+ * Marking some mime types as built-in blacklisted, e.g.
+   application/x-shockwave-flash
+ * Adding more mime types to built-in blacklist to avoid
+   problems with Thunderbird
+
+2010-06-29
+ * Adding dialog to choose which KPart to use if several
+   parts are available. User can set preference to avoid
+   getting this dialog again for the same mime type.
+
+2010-06-27
+ * Adding comments throughout the code
+ * Enabling/disabling mime types possible in GUI
+   (new push button with menu)
+ * Improved focus handling using code from Jeremy Sanders
+ * Make installation path 32/64-bit aware
+ * Minor GUI improvements
+
+2010-06-04
+ * Major refactoring
+ * Supported mime types determined through KDE-internal
+   functions; hard-coded list no longer necessary
+
+2010-06-02
+ * Saving file failed if part was not loaded properly.
+
+2010-06-01
+ * CMakeLists.txt contains a variable with installation
+   directory
+ * New script src/generate-mimetype-includes.sh to enhance
+   "raw" source files to final files containing a list of
+   objects (one for each supported mime type)
+   List of mime types can be controlled via text file
+   src/mimetypes.txt
+ * Showing a list of compiled-in/supported mime types
+   while waiting for the file's data
+ * Open and save buttons are available even if no part
+   is available to show the file's data
+ * Fixing warnings
+
+2010-05-21
+ * Initial release
+
+

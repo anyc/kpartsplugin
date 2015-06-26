@@ -1,0 +1,17 @@
+[Desktop Entry]
+Exec=kcmshell4 kcm_kpartsplugin
+Icon=preferences-desktop-filetype-association
+
+X-DocPath=kpartsplugin/index.html
+
+Type=Service
+X-KDE-ServiceTypes=KCModule
+X-KDE-Library=kcm_kpartsplugin
+X-KDE-ParentApp=kcontrol
+
+X-KDE-System-Settings-Parent-Category=network-and-connectivity
+
+Name=KPartsPlugin
+Comment=Configure KPartsPlugin
+X-KDE-Keywords=nsplugin,browser,plugin,plug-in,firefox,chrome,opera
+Categories=Qt;KDE;X-KDE-settings-system;
