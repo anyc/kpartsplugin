@@ -120,8 +120,8 @@ public:
         dlg.exec();
         rememberChoice = dlg.checkBoxRemember->checkState() == Qt::Checked;
         /// fetch first (and only) selected item in list
-        QList<QListWidgetItem *>::ConstIterator it(dlg.listWidget->selectedItems().constBegin());
-        return (*it)->text();
+        QList<QListWidgetItem *> it(dlg.listWidget->selectedItems());
+        return it.at(0)->text();
     }
 
 };
